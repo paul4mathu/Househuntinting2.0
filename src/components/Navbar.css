@@ -1,0 +1,71 @@
+/* src/components/Navbar.css */
+
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.navbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Favorites button with red heart */
+.favorites-link {
+  color: red;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.favorites-link:hover {
+  color: darkred;
+}
+
+.navbar-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+.navbar-button:hover {
+  background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.2em;
+  }
+
+  .navbar-button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+}

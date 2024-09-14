@@ -1,0 +1,28 @@
+
+
+.house-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* Set a maximum of 4 columns */
+  gap: 20px;  
+  padding: 5px;
+  background-color: #fafafa;
+}
+
+/* Ensure cards wrap well when the screen is small */
+@media (max-width: 1200px) {
+  .house-list {
+    grid-template-columns: repeat(3, 1fr);  /* Reduce to 3 */
+  }
+}
+
+@media (max-width: 900px) {
+  .house-list {
+    grid-template-columns: repeat(2, 1fr);  /* Reduce to 2 */
+  }
+}
+
+@media (max-width: 600px) {
+  .house-list {
+    grid-template-columns: 1fr;  /* Stack in 1 column*/
+  }
+}
