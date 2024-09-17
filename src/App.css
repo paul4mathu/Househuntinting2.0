@@ -1,7 +1,19 @@
+/* src/App.css */
+
+/* Main app container */
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left to avoid centering everything */
+  overflow: hidden; /* Prevent overflow */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Optional: Set a background color */
 }
 
+/* If you want to keep the logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,21 +25,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/* Optional: Remove this if not needed */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +33,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Overlay styles for popups (e.g., RequestHouseForm) */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* General link style */
+.App-link {
+  color: #61dafb;
+}
+body ,html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
