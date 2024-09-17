@@ -1,0 +1,138 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative; /* Ensure the close button is positioned relative to this container */
+  width: 100%;
+  max-width: 400px; 
+  box-sizing: border-box;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-button:hover {
+  background-color: #ddd;
+}
+
+.form-inner-container {
+  padding: 23px; /* Increase padding for a more spacious feel */
+  width: 100%; /* Make sure it takes full width available */
+  max-width: 300px; /* Set the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow for floating effect */
+  background-color: white; /* Ensure background is white */
+}
+
+.form-step {
+  margin-bottom: 20px;
+  margin: 0;
+  border: none;
+}
+
+.form-step h2 {
+  margin-top: 0;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.form-step p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: gray;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.form-step label {
+  display: block;
+  margin: 10px 0 5px;
+  color: gray;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: small;
+}
+
+.form-step input,
+.form-step textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form-step button {
+  padding: 12px 24px; /* Increase padding for larger buttons */
+  border: 2px solid transparent; /* Ensure the border is always visible */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 120px; /* Set a minimum width for consistency */
+  margin-top: 7px;
+}
+
+.form-step button.back-button {
+  background-color: white;
+  color: #333;
+  border-color: #ddd; /* Light gray border for back button */
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+.form-step button.back-button:hover {
+  background-color: #f8f8f8;
+}
+
+.form-step button.submit-button {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff; /* Blue border for submit button */
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+.form-step button.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-step button.next-button {
+  background-color: blue;
+  color: white;
+  border-color: blue; /* Blue border for next button */
+  font-size: 0.9em;
+}
+
+.form-step button.next-button:hover {
+  background-color: #003d7a; /* Darker blue on hover */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}

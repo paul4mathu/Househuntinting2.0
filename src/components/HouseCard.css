@@ -1,9 +1,7 @@
-/* src/components/HouseCard.css */
-
 .house-card {
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-  width: 100%; /* Set width to 100% */
+  padding: 0; 
+  margin: 0; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -21,9 +19,9 @@
 /* Swiper Container */
 .house-images {
   width: 100%; /* Full width */
-  height: 220px; /* Increase height to make room for dots */
+  height: 220px;  
   background-color: #f4f4f4;
-  position: relative; /* Set position to relative to position dots */
+  position: relative; 
   overflow: hidden;
 }
 
@@ -36,13 +34,13 @@
 
 /* Swiper Pagination (dots) */
 .swiper-pagination {
-  bottom: 10px; /* Position dots slightly above the bottom */
-  z-index: 10; /* Ensure dots are above images */
+  bottom: 10px; 
+  z-index: 10; 
 }
 
-/* Add spacing between image and price */
+
 .house-images + .house-price {
-  margin-top: 10px; /* Add spacing */
+  margin-top: 10px; 
 }
 
 /* House Price - Full Width */
@@ -54,20 +52,20 @@
   font-weight: bold;
   text-align: center;
   width: 100%; /* Full width */
-  box-sizing: border-box; /* Include padding in width */
+  box-sizing: border-box;
 }
 
 /* House Type - Default Width */
 .house-type {
   color: black;
   font-size: 1.3em;
-  padding: 8px; /* Add padding to match the layout */
+  padding: 8px; 
   font-weight: bold;
 }
 
 /* House Description - Default Width */
 .house-description {
-  padding: 8px; /* Add padding to match the layout */
+  padding: 8px; 
   color: #666;
 }
 
@@ -89,7 +87,7 @@
 .house-actions {
   display: flex;
   justify-content: space-between;
-  padding: 8px; /* Add padding */
+  padding: 8px; 
 }
 
 .book-visit-btn {
@@ -111,11 +109,12 @@
   padding: 8px;
   font-size: 0.8em;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
 }
 
-.details-link:hover {
-  background-color: #e74c3c;
-  color: white;
+.details-link:hover{
+  color:blue;
+  text-decoration: underline;
 }
 
 /* Favorite Heart Button */
@@ -124,6 +123,7 @@
   border: none;
   cursor: pointer;
   position: relative;
+  color: red;
 }
 
 /* Heart Icon */

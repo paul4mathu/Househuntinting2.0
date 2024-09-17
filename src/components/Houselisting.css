@@ -1,14 +1,14 @@
-/* Base styles for .house-list */
 .house-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Set a maximum of 4 columns */
   gap: 20px;  /* Space between columns */
-  padding: 10px; /* Add padding to the container */
-  width: calc(100vw - 20px); /* Adjust width to account for padding */
-  margin: 0 auto; /* Center the container if needed */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  padding: 10px; 
+  padding-top: 30px;
+  width: calc(100vw - 20px); 
+  margin: 0 auto; 
+  box-sizing: border-box; 
   background-color:white;
-  transition: all 0.3s ease; /* Smooth transition on resize */
+  transition: all 0.3s ease;
 }
 
 /* Large screens: 3 columns */
