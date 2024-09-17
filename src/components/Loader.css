@@ -1,26 +1,54 @@
 .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  /* Full-screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-screen height */
+  background-color: #ffffff; /* Set the background to white */
+}
+
+/* Container for the letters */
+.letters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Minimized gap between the letters */
+}
+
+/* Style for the H letters */
+.letter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #3498db; /* Set color to a bright blue */
+  opacity: 0; /* Start with hidden */
+  animation: fadeIn 1s forwards;
+}
+
+/* Delayed animation for the second H */
+.letter.delayed {
+  animation-delay: 0.5s; /* Delay before the second H appears */
+}
+
+/* Style for the "HOUNTER" text */
+.hounter-text {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #2c3e50; /* Set color to a darker blue for contrast */
+  text-transform: uppercase; /* Make text uppercase */
+  opacity: 0; /* Start with hidden */
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s; /* Delay to show after the letters */
+  font-weight: bolder;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Slight movement for smoother transition */
   }
-  
-  .spinner {
-    width: 60px;
-    height: 60px;
-    border: 8px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  /* Animation for the spinner */
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}

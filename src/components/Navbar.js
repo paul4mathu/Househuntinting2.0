@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import RequestHouseForm from './RequestHouseForm'; // Import the RequestHouseForm component
+import RequestHouseForm from './RequestHouseForm'; 
 
 function Navbar() {
   const [showRequestForm, setShowRequestForm] = useState(false);

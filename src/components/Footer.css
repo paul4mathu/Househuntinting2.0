@@ -1,10 +1,11 @@
-
 .footer {
-  background-color: #1e90ff; 
-  padding: 5px 10px;
+  background-color: rgba(6, 6, 139, 0.658); 
+  padding: 5px 10px; /* Adjusted padding */
   color: white;
+  border-radius: 5px;
 }
 
+/* Main footer container */
 .footer-container {
   display: flex;
   justify-content: space-between; 
@@ -12,23 +13,50 @@
   margin-bottom: 10px; 
 }
 
+/* Footer section styling */
 .footer-section {
   flex: 1;
   padding: 5px; 
   text-align: left;
 }
 
+/* Specifically target the footer contact to move it closer to the right margin */
+.footer-contact {
+  margin-left: auto; /* Automatically push to the right */
+  padding-top: 10px; 
+}
+
+/* Adjust footer subscribe section for balance */
+.footer-subscribe {
+  margin-right: 20px; /* Add a bit of right margin to balance the layout */
+}
+
 /* Media Query for Mobile View */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column; /* Stack items vertically */
-    align-items: center; 
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 0; /* Remove margin at the bottom */
   }
-  
+
   .footer-section {
-    width: 100%; 
+    width: 100%; /* Make each section full width */
     padding: 10px 0; 
-    text-align:start; 
+    text-align: left; /* Ensure text aligns to the left */
+  }
+
+  /* Remove margin adjustments to make sections start from the margin */
+  .footer-contact,
+  .footer-subscribe {
+    margin: 0; /* Remove margins for a flush layout */
+  }
+
+  /* Adjust padding for sections */
+  .footer-title,
+  .footer-links,
+  .footer-contact,
+  .footer-subscribe {
+    padding: 10px 0;
   }
 }
 
@@ -79,15 +107,6 @@
   margin-bottom: 5px; 
 }
 
-.footer-contact {
-  margin-left: 20px; 
-  padding-top: 10px; 
-}
-
-.footer-subscribe {
-  margin-right: 20px; 
-}
-
 /* Horizontal Line */
 .footer-divider {
   width: 100%;
@@ -102,10 +121,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Wrap elements for mobile view */
 }
 
 .footer-bottom p {
   margin: 0;
+  flex: 1; /* Allow text to expand */
 }
 
 .social-icons {
