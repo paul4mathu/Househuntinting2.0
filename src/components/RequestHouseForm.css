@@ -14,7 +14,7 @@
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  position: relative; /* Ensure the close button is positioned relative to this container */
+  position: relative; 
   width: 100%;
   max-width: 400px; 
   box-sizing: border-box;
@@ -42,12 +42,12 @@
 }
 
 .form-inner-container {
-  padding: 23px; /* Increase padding for a more spacious feel */
-  width: 100%; /* Make sure it takes full width available */
+  padding: 23px; 
+  width: 100%; 
   max-width: 300px; /* Set the maximum width */
   margin: 0 auto; /* Center the container horizontally */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow for floating effect */
-  background-color: white; /* Ensure background is white */
+  background-color: white; 
 }
 
 .form-step {
@@ -88,8 +88,8 @@
 }
 
 .form-step button {
-  padding: 12px 24px; /* Increase padding for larger buttons */
-  border: 2px solid transparent; /* Ensure the border is always visible */
+  padding: 12px 24px; 
+  border: 2px solid transparent; 
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -100,7 +100,7 @@
 .form-step button.back-button {
   background-color: white;
   color: #333;
-  border-color: #ddd; /* Light gray border for back button */
+  border-color: #ddd;
   font-size: 0.9em;
   border-radius: 10px;
 }
@@ -112,7 +112,7 @@
 .form-step button.submit-button {
   background-color: #007bff;
   color: white;
-  border-color: #007bff; /* Blue border for submit button */
+  border-color: #007bff; 
   font-size: 0.9em;
   border-radius: 10px;
 }
@@ -124,12 +124,12 @@
 .form-step button.next-button {
   background-color: blue;
   color: white;
-  border-color: blue; /* Blue border for next button */
+  border-color: blue; 
   font-size: 0.9em;
 }
 
 .form-step button.next-button:hover {
-  background-color: #003d7a; /* Darker blue on hover */
+  background-color: #003d7a; 
 }
 
 .form-buttons {
